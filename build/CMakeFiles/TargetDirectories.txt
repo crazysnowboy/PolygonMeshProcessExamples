@@ -1,0 +1,15 @@
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/CMakeFiles/edit_cache.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/CMakeFiles/rebuild_cache.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/src/c/CMakeFiles/rebuild_cache.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/src/c/CMakeFiles/edit_cache.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/src/c/CMakeFiles/myclib.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/src/cpp/CMakeFiles/rebuild_cache.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/src/cpp/CMakeFiles/edit_cache.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/src/cpp/CMakeFiles/mycpplib.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/main/CMakeFiles/edit_cache.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/main/CMakeFiles/Main.bin.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/main/CMakeFiles/curvview.bin.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/main/CMakeFiles/fairing.bin.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/main/CMakeFiles/smoother.bin.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/main/CMakeFiles/rebuild_cache.dir
+/home/collin/Documents/MyProjects/AAAAAA/myLearningProjects/PolygonMeshProcession/build/main/CMakeFiles/mview.bin.dir

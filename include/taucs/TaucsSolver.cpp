@@ -200,16 +200,8 @@ bool TaucsSolver::solve(std::vector<double>& _b, std::vector<double>& _x)
   return true;
 }
 
-
-//-----------------------------------------------------------------------------
-#else
-//-----------------------------------------------------------------------------
-
-
 template <class Vec>
-bool
-TaucsSolver::
-vec_solve(std::vector<Vec>& _b, std::vector<Vec>& _x)
+bool TaucsSolver::vec_solve(std::vector<Vec>& _b, std::vector<Vec>& _x)
 {
   const unsigned int N = A.n;
 
@@ -233,9 +225,9 @@ vec_solve(std::vector<Vec>& _b, std::vector<Vec>& _x)
 
     // solve by back-substitution
     if ((supernodal_ ?
-	 taucs_supernodal_solve_llt(SL, &PX[0], &PB[0]) :
-	 taucs_ccs_solve_llt(L, &PX[0], &PB[0])) 
-	!= TAUCS_SUCCESS)
+         taucs_supernodal_solve_llt(SL, &PX[0], &PB[0]) :
+         taucs_ccs_solve_llt(L, &PX[0], &PB[0]))
+        != TAUCS_SUCCESS)
     {
       std::cerr << "TaucsSolver: back-substitution failed\n";
       return false;

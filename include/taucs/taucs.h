@@ -12,17 +12,6 @@
 #include <stdlib.h>
 #include <float.h>
 
-//
-//int max(int a,int b)
-//{
-//    return a>=b?a:b;
-//
-//}
-//int min(int a,int b)
-//{
-//    return a<=b?a:b;
-//
-//}
 
 
 #ifdef __cplusplus
@@ -880,8 +869,8 @@ taucs_single taucs_blas_name(scnrm2)(int*, taucs_scomplex*, int*);
 /*                                                       */
 /*********************************************************/
 
-#undef min
-#undef max
+//#undef min
+//#undef max
 
 #ifdef __cplusplus
 } // extern C

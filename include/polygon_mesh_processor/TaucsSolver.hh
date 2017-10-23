@@ -89,7 +89,7 @@ private:
   bool                       supernodal_;
 };
 
-
+#include "TaucsSolver.cpp"
 //=============================================================================
 //#if defined(OM_INCLUDE_TEMPLATES) && !defined(TAUCS_SOLVER_C)
 //#  define MB_TAUCS_SOLVER_TEMPLATES

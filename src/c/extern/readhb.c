@@ -93,10 +93,10 @@ es: tot: \002,i14,\002 ptr: \002,i14,\002 ind: \002,i14/\002        val: \
     olist o__1;
     cllist cl__1;
 
-//    /* Builtin functions */
-//    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
-//            f_clos(), s_wsle(), do_lio(), e_wsle();
-//    /* Subroutine */ int s_stop();
+    /* Builtin functions */
+    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
+            f_clos(), s_wsle(), do_lio(), e_wsle();
+    /* Subroutine */ int s_stop();
 
     /* Local variables */
     static char title[72];
@@ -246,10 +246,10 @@ nzrhs: \002,i14)";
     olist o__1;
     cllist cl__1;
 
-//    /* Builtin functions */
-//    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
-//            s_wsle(), do_lio(), e_wsle(), f_clos();
-//    /* Subroutine */ int s_stop();
+    /* Builtin functions */
+    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
+            s_wsle(), do_lio(), e_wsle(), f_clos();
+    /* Subroutine */ int s_stop();
 
     /* Local variables */
     static doublereal skew;
@@ -628,10 +628,10 @@ nzrhs: \002,i14)";
     olist o__1;
     cllist cl__1;
 
-//    /* Builtin functions */
-//    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
-//            s_wsle(), do_lio(), e_wsle(), f_clos();
-//    /* Subroutine */ int s_stop();
+    /* Builtin functions */
+    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
+            s_wsle(), do_lio(), e_wsle(), f_clos();
+    /* Subroutine */ int s_stop();
 
     /* Local variables */
     static real skew;
@@ -1010,10 +1010,10 @@ nzrhs: \002,i14)";
     olist o__1;
     cllist cl__1;
 
-//    /* Builtin functions */
-//    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
-//            s_wsle(), do_lio(), e_wsle(), f_clos();
-//    /* Subroutine */ int s_stop();
+    /* Builtin functions */
+    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
+            s_wsle(), do_lio(), e_wsle(), f_clos();
+    /* Subroutine */ int s_stop();
 
     /* Local variables */
     static doublecomplex skew;
@@ -1400,10 +1400,10 @@ nzrhs: \002,i14)";
     olist o__1;
     cllist cl__1;
 
-//    /* Builtin functions */
-//    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
-//            s_wsle(), do_lio(), e_wsle(), f_clos();
-//    /* Subroutine */ int s_stop();
+    /* Builtin functions */
+    integer f_open(), s_rsfe(), do_fio(), e_rsfe(), s_wsfe(), e_wsfe(),
+            s_wsle(), do_lio(), e_wsle(), f_clos();
+    /* Subroutine */ int s_stop();
 
     /* Local variables */
     static complex skew;
