@@ -50,7 +50,7 @@ taucs_scomplex  taucs_cone_const      =  1.0f+0.0f*_Complex_I;
 taucs_scomplex  taucs_cminusone_const = -1.0f+0.0f*_Complex_I;
 #endif
 
-#else /* TAUCS_C99_COMPLEX */
+//#else /* TAUCS_C99_COMPLEX */
 
 #ifdef TAUCS_CORE_DCOMPLEX
 taucs_dcomplex taucs_zzero_const     = { 0.0 , 0.0 };

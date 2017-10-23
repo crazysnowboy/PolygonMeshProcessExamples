@@ -4,4 +4,6 @@ add_definitions(-DTAUCS_DOUBLE_IN_BUILD)
 add_definitions(-DTAUCS_CORE_DOUBLE)
 
 
-#add_definitions(-D__cplusplus)
+#add_definitions(-DNOMETIS)
+
+list(APPEND LIBRARIES  -lmetis)

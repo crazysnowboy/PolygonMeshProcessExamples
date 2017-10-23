@@ -729,11 +729,10 @@ taucs_ccs_treeorder(taucs_ccs_matrix* m,
 
 /* from stuct.h in metis */
 typedef int idxtype;
-/* from metis.h */
+///* from metis.h */
 void METIS_NodeND(int *, idxtype *, idxtype *, int *, int *, idxtype *, idxtype *);
 
-static void
-taucs_ccs_metis(taucs_ccs_matrix* m,
+static void taucs_ccs_metis(taucs_ccs_matrix* m,
                 int** perm, int** invperm,
                 char* which)
 {
@@ -926,6 +925,7 @@ taucs_ccs_order(taucs_ccs_matrix* m,
     else if (!strcmp(which,"metis"))
     {
         taucs_ccs_metis(m,perm,invperm,which);
+//        printf("----crazylog---without metis interface----------\r\n");
     }
     else if (!strcmp(which,"genmmd"))
     {
@@ -944,6 +944,7 @@ taucs_ccs_order(taucs_ccs_matrix* m,
         taucs_ccs_treeorder(m,perm,invperm);
         if (*perm == NULL) /* perhaps the graph of the matrix is not a tree */
         {
+//            printf("--crazylog-----without metis interface----------\r\n");
             taucs_ccs_metis(m,perm,invperm,"metis");
         }
     }

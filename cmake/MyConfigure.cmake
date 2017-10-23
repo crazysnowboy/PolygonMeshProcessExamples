@@ -6,7 +6,7 @@ list(APPEND LIBRARIES  -lopenblas -lcurl
 
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -w")
-set(CMAKE_C_FLAGS " -w")
+set(CMAKE_C_FLAGS "-fno-builtin -w")
 
 set(DCMAKE_CXX_COMPILER g++-5)
 set(CMAKE_C_COMPILER gcc-5)
