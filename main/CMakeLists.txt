@@ -14,7 +14,9 @@ foreach(source ${DIR_SRCS})
 
     # link library
     target_link_libraries(${ExeName}
-            ${PROJECT_SOURCE_DIR}/lib/libmylib.so
+            ${PROJECT_SOURCE_DIR}/lib/libmyclib.so
+            ${PROJECT_SOURCE_DIR}/lib/libmycpplib.so
+
             ${LIBRARIES}
                          )
 
