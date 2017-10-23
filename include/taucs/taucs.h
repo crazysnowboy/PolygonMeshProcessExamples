@@ -595,37 +595,55 @@ typedef struct
 
 /* generate all the prototypes */
 
-#define taucs_datatype taucs_double
-#define taucs_real_datatype taucs_double
-#define taucs_dtl(X) taucs_d##X
-#include "taucs_private.h"
-#undef taucs_real_datatype
-#undef taucs_datatype
-#undef taucs_dtl
+#ifdef TAUCS_CONFIG_DREAL
+    #define taucs_datatype taucs_double
+    #define taucs_real_datatype taucs_double
+    #define taucs_dtl(X) taucs_d##X
+    #include "taucs_private.h"
+    #undef taucs_real_datatype
+    #undef taucs_datatype
+    #undef taucs_dtl
+#endif
 
-#define taucs_datatype taucs_single
-#define taucs_real_datatype taucs_single
-#define taucs_dtl(X) taucs_s##X
-#include "taucs_private.h"
-#undef taucs_real_datatype
-#undef taucs_datatype
-#undef taucs_dtl
+#ifdef TAUCS_CONFIG_SREAL
+    #define taucs_datatype taucs_single
+    #define taucs_real_datatype taucs_single
+    #define taucs_dtl(X) taucs_s##X
+    #include "taucs_private.h"
+    #undef taucs_real_datatype
+    #undef taucs_datatype
+    #undef taucs_dtl
+#endif
 
-#define taucs_datatype taucs_dcomplex
-#define taucs_real_datatype taucs_double
-#define taucs_dtl(X) taucs_z##X
-#include "taucs_private.h"
-#undef taucs_real_datatype
-#undef taucs_datatype
-#undef taucs_dtl
+#ifdef TAUCS_CONFIG_DCOMPLEX
 
-#define taucs_datatype taucs_scomplex
-#define taucs_real_datatype taucs_single
-#define taucs_dtl(X) taucs_c##X
-#include "taucs_private.h"
-#undef taucs_real_datatype
-#undef taucs_datatype
-#undef taucs_dtl
+    #define taucs_datatype taucs_dcomplex
+    #define taucs_real_datatype taucs_double
+    #define taucs_dtl(X) taucs_z##X
+    #include "taucs_private.h"
+    #undef taucs_real_datatype
+    #undef taucs_datatype
+    #undef taucs_dtl
+#endif
+
+#ifdef TAUCS_CONFIG_SCOMPLEX
+
+    #define taucs_datatype taucs_scomplex
+    #define taucs_real_datatype taucs_single
+    #define taucs_dtl(X) taucs_c##X
+    #include "taucs_private.h"
+    #undef taucs_real_datatype
+    #undef taucs_datatype
+    #undef taucs_dtl
+
+#endif
+
+
+
+
+
+
+
 
 /*********************************************************/
 /*                                                       */

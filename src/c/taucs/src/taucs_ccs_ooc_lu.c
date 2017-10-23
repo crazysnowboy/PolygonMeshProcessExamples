@@ -21,7 +21,7 @@
 #define HEADER_UCLEN   6
 #define HEADER 7
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 #ifdef OSTYPE_win32
 #include <io.h>
@@ -4512,7 +4512,7 @@ int taucs_dtl(ooc_solve_lu)(taucs_io_handle*   LU,
     return oocsp_solve(LU,x,b);
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 /*********************************************************/
 /* USER CALLABLE ROUTINES                                */

@@ -57,7 +57,7 @@ taucs_ccs_split(taucs_ccs_matrix*  A,
 }
 #endif /*TAUCS_CORE_GENERAL*/
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 /* split into left p columns, right p columns */
 void
@@ -162,7 +162,7 @@ taucs_dtl(ccs_split)(taucs_ccs_matrix*  A,
     }
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 /*********************************************************/
 /* permute symmetrically                                 */
@@ -206,7 +206,7 @@ taucs_ccs_permute_symmetrically(taucs_ccs_matrix* A, int* perm, int* invperm)
 }
 #endif /*TAUCS_CORE_GENERAL*/
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 taucs_ccs_matrix*
 taucs_dtl(ccs_permute_symmetrically)(taucs_ccs_matrix* A, int* perm, int* invperm)
@@ -315,7 +315,7 @@ taucs_dtl(ccs_permute_symmetrically)(taucs_ccs_matrix* A, int* perm, int* invper
     return PAPT;
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 /*********************************************************/
 /* compute B = A*X                                       */
@@ -361,7 +361,7 @@ taucs_ccs_times_vec(taucs_ccs_matrix* m,
 }
 #endif /*TAUCS_CORE_GENERAL*/
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 void
 taucs_dtl(ccs_times_vec)(taucs_ccs_matrix* m,
@@ -426,7 +426,7 @@ taucs_dtl(ccs_times_vec)(taucs_ccs_matrix* m,
     }
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 #ifdef TAUCS_CORE_SINGLE
 void
@@ -523,7 +523,7 @@ taucs_ccs_augment_nonpositive_offdiagonals(taucs_ccs_matrix* A)
 }
 #endif /*TAUCS_CORE_GENERAL*/
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 taucs_ccs_matrix*
 taucs_dtl(ccs_augment_nonpositive_offdiagonals)(taucs_ccs_matrix* A)
@@ -614,7 +614,7 @@ taucs_dtl(ccs_augment_nonpositive_offdiagonals)(taucs_ccs_matrix* A)
     return NULL;
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 /*********************************************************/
 /*                                                       */
 /*********************************************************/

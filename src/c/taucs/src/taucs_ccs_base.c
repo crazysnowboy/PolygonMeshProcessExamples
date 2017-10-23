@@ -79,7 +79,7 @@ taucs_ccs_create(int m, int n, int nnz, int flags)
 }
 #endif /*TAUCS_CORE_GENERAL*/
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 taucs_ccs_matrix*
 taucs_dtl(ccs_create)(int m, int n, int nnz)
 {

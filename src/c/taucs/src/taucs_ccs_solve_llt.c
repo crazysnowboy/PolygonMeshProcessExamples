@@ -15,7 +15,7 @@
 /*********************************************************/
 
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 int
 taucs_dtl(ccs_solve_llt)(void* vL, taucs_datatype* x, taucs_datatype* b)
 {
@@ -401,7 +401,7 @@ taucs_dtl(ccs_solve_ldlt)(void* vL, taucs_datatype* x, taucs_datatype* b)
     return 0;
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 #ifdef TAUCS_CORE_GENERAL
 int
@@ -497,8 +497,7 @@ taucs_ccs_solve_llt(void* vL, void* x, void* b)
     return -1;
 }
 
-int
-taucs_ccs_solve_ldlt(void* vL, void* x, void* b)
+int taucs_ccs_solve_ldlt(void* vL, void* x, void* b)
 {
     taucs_ccs_matrix* L = (taucs_ccs_matrix*) vL;
 

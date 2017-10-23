@@ -16,7 +16,7 @@
 #pragma lang -C
 #endif
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 #ifdef TAUCS_CILK
 
 /*** GEMM ***/
@@ -823,7 +823,7 @@ radix_sort(unsigned int* x, int n)
 /* create and free the factor object                         */
 /*************************************************************/
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 static supernodal_factor_matrix*
 multifrontal_supernodal_create()
@@ -1384,7 +1384,7 @@ multifrontal_supernodal_front_extend_add(
     }
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 /*************************************************************/
 /* symbolic elimination                                      */
@@ -2047,7 +2047,7 @@ recursive_amalgamate_supernodes(int           sn,
 #endif /* #ifdef TAUCS_CORE_GENERAL */
 
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 
 /*************************************************************/
@@ -3297,7 +3297,7 @@ taucs_dtl(supernodal_solve_llt)(void* vL, void* vx, void* vb)
 
     return 0;
 }
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 /*************************************************************/
 /* generic interfaces to user-callable routines              */

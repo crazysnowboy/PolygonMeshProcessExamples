@@ -323,9 +323,7 @@ char*            taucs_io_get_basename(taucs_io_handle* f);
 /* Out-of-core Sparse Choleksy routines                  */
 /*********************************************************/
 
-int taucs_dtl(ooc_factor_llt)(taucs_ccs_matrix* A,
-                              taucs_io_handle*  L,
-                              double memory);
+int taucs_dtl(ooc_factor_llt)(taucs_ccs_matrix* A, taucs_io_handle*  L, double memory);
 /*added omer*/
 int taucs_dtl(ooc_factor_llt_panelchoice)(taucs_ccs_matrix* A,
         taucs_io_handle* handle,

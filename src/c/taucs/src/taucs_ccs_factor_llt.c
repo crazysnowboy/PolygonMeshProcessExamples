@@ -18,7 +18,7 @@ typedef struct
     taucs_datatype* values;
 } spa;
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 /*********************************************************/
 /* sparse accumulator                                    */
@@ -1021,7 +1021,7 @@ taucs_dtl(ccs_factor_ldlt)(taucs_ccs_matrix* A)
     return L;
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 /*********************************************************/
 /*                                                       */

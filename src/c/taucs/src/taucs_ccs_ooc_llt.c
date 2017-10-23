@@ -42,7 +42,7 @@
 /* multiple files of at most 1 GB or single file */
 #define MULTIFILE 0
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 /*************************************************************/
 /* structures                                                */
@@ -3257,7 +3257,7 @@ int taucs_dtl(ooc_factor_llt_panelchoice)(taucs_ccs_matrix* A,
     return 0;
 }
 
-#else /* TAUCS_CORE_GENRAL */
+//#else /* TAUCS_CORE_GENRAL */
 
 /*************************************************************/
 /* generic interfaces to user-callable routines              */

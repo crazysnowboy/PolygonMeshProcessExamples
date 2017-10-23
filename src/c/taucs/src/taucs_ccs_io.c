@@ -402,7 +402,7 @@ taucs_ccs_write_ijv(taucs_ccs_matrix* m, char* ijvfilename)
 #endif /* TAUCS_CORE_GENERAL */
 
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 int
 taucs_dtl(ccs_write_ijv)(taucs_ccs_matrix* m,
                          char* ijvfilename)
@@ -468,7 +468,7 @@ taucs_dtl(ccs_write_ijv)(taucs_ccs_matrix* m,
     return 0;
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 /*********************************************************/
 /* read ijv                                              */
@@ -515,7 +515,7 @@ taucs_ccs_read_ijv(char* ijvfilename,int flags)
 
 #endif /* TAUCS_CORE_GENERAL */
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 taucs_ccs_matrix*
 taucs_dtl(ccs_read_ijv)(char* ijvfilename,int flags)
@@ -736,7 +736,7 @@ taucs_dtl(ccs_read_ijv)(char* ijvfilename,int flags)
     return m;
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 /*********************************************************/
 /* read mtx                                              */
@@ -783,7 +783,7 @@ taucs_ccs_read_mtx(char* mtxfilename,int flags)
 
 #endif /* TAUCS_CORE_GENERAL */
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 taucs_ccs_matrix*
 taucs_dtl(ccs_read_mtx)(char* filename,int flags)
@@ -1039,7 +1039,7 @@ taucs_dtl(ccs_read_mtx)(char* filename,int flags)
     return m;
 }
 
-#endif /* #ifndef TAUCS_CORE_GENERAL */
+#endif /* #ifdef TAUCS_CORE_GENERAL */
 
 /*********************************************************/
 /* read ccs                                              */
@@ -1086,7 +1086,7 @@ taucs_ccs_read_ccs(char* ccsfilename,int flags)
 
 #endif /* TAUCS_CORE_GENERAL */
 
-#ifndef TAUCS_CORE_GENERAL
+#ifdef TAUCS_CORE_GENERAL
 
 taucs_ccs_matrix*
 taucs_dtl(ccs_read_ccs)(char* filename,int flags)
@@ -1208,7 +1208,7 @@ taucs_dtl(ccs_read_ccs)(char* filename,int flags)
     return m;
 }
 
-#endif /*#ifndef TAUCS_CORE_GENERAL*/
+#endif /*#ifdef TAUCS_CORE_GENERAL*/
 
 /*********************************************************/
 /* vector io                                             */
